@@ -109,14 +109,27 @@ class MainKtTest{
         assertEquals(expected,check,0.0)
     }
     @Test
-    fun calculateVkPayResulr1(){//с налогом
+    fun calculateVkPayResulr1(){//без налогов
         var previousAmount=1005
         var amount  =400.00
         var expected=400.00
         var check=result(
-            "VK Pay",
+            "Vk Pay",
             previousAmount,
             amount )
+        //есть еще один метод, assertEquals(double expected, double actual, double delta)который допускает deltaпотерю точности.
+        //дельта - максимальная разница между ожидаемым и фактическим значениями, при которой оба числа по-прежнему считаются равными.
+        assertEquals(expected,check,0.0)
+    }
+    @Test
+    fun calculateVkPayResulr0(){//без налогов
+        var previousAmount=1005
+        var amount  =400.00
+        var expected=400.00
+        var check=result(
+            previousAmount=
+            previousAmount,
+            amount = amount )
         //есть еще один метод, assertEquals(double expected, double actual, double delta)который допускает deltaпотерю точности.
         //дельта - максимальная разница между ожидаемым и фактическим значениями, при которой оба числа по-прежнему считаются равными.
         assertEquals(expected,check,0.0)
