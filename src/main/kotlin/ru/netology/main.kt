@@ -10,7 +10,7 @@ fun result(typeCard: String="Vk Pay",
 
         }
         "Visa" , "Мир" -> if( amount * 0.75/100 <=35 )
-            nalog=35.0
+            nalog*=35.0
         else nalog=amount * 0.75/100
         "Vk Pay" -> nalog=0.0
     }

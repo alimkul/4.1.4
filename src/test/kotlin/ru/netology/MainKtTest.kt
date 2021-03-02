@@ -125,7 +125,7 @@ class MainKtTest{
     fun calculateVkPayResulr0(){//без налогов
         var previousAmount=1005
         var amount  =400.00
-        var expected=400.00
+        var expected=390.00
         var check=result(
             previousAmount=
             previousAmount,
